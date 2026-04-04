@@ -1,4 +1,3 @@
-![20260404210406](https://github.com/user-attachments/assets/230a06b9-97ae-4973-ba76-e0be1ce4ddc9)# OmniAi
 
 > Switch between AI instantly.
 
