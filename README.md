@@ -62,31 +62,31 @@ Your data stays with you.
 
 ---
 
-## 安装方法
+## Installation Method
 
-### 方式一：DMG 安装包（推荐）
+### Method 1: DMG Installer (Recommended)
 
-1. 下载 `OmniAi.dmg`
-2. 双击打开，把 `OmniAi.app` 拖入应用程序文件夹
-3. 在应用程序中双击启动
+1. Download `OmniAi.dmg`
+2. Double-click to open, then drag `OmniAi.app` into the Applications folder
+3. Double-click in Applications to launch
 
 ---
 
-### ⚠️ 提示"OmniAi 已损坏，无法打开"？
+### ⚠️ Tip: "OmniAi is damaged and can't be opened"?
 
-这是 macOS 的安全机制，不是真的损坏。两步解决：
+This is macOS's security mechanism, not actual damage. Two steps to resolve:
 
-**第一步**：打开「终端」（在启动台 → 其他 → 终端）
+**Step 1**: Open "Terminal" (in Launchpad → Others → Terminal)
 
-**第二步**：复制粘贴以下命令，按回车：
+**Step 2**: Copy and paste the following command, then press Enter:
 
 ```bash
 xattr -cr /Applications/OmniAi.app
 ```
 
-**第三步**：重新双击 OmniAi 即可正常打开。
+**Step 3**: Double-click OmniAi again, it should open normally.
 
-> 这条命令只是告诉 macOS"我信任这个 App"，安全无副作用。
+> This command simply tells macOS "I trust this App" and is safe with no side effects.
 
 ---
 
