@@ -48,7 +48,7 @@ Your data stays with you.
 
 ## ⬇️ Download
 
-👉 [Download latest release](#)
+👉 [[Download latest release](#)](https://github.com/unhurriedly/OminiAi/releases/tag/v1.0.0)
 
 ---
 
