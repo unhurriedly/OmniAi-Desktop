@@ -1,4 +1,6 @@
 
+<img width="70" height="70" alt="正式logo" src="https://github.com/user-attachments/assets/b974e1f4-beae-4ab5-bcba-7853716822e5" />
+
 # OmniAi
 
 **All AI, one place.**
