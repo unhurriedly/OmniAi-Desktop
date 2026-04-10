@@ -6,6 +6,8 @@
 
 一款 AI 原生应用，将所有主流 AI 助手聚合在一个窗口中。可以在 ChatGPT、Claude、Gemini、Manus、DeepSeek、GLM、豆包、MiniMax、Kimi 等 AI 应用之间瞬时切换——无需浏览器标签页，无需重复登录。
 
+[English](./README_en.md) | 简体中文
+
 [![下载地址](https://img.shields.io/badge/Download-GitHub%20Releases-blue?style=flat-square)](https://github.com/unhurriedly/OminiAi/releases)
 
 ## 痛点
