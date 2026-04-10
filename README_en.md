@@ -7,6 +7,8 @@
 
 An AI-native application that brings every major AI assistant into one window. Switch instantly between ChatGPT, Claude, Gemini, Manus, DeepSeek, GLM, Doubao, MiniMax, Kimi and more — no browser tabs, no re-logins, no context switching.
 
+English | [简体中文](./README.md)
+
 [![Download](https://img.shields.io/badge/Download-GitHub%20Releases-blue?style=flat-square)](https://github.com/unhurriedly/OminiAi/releases)
 
 ## The Problem
