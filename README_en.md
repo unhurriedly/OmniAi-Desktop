@@ -69,6 +69,11 @@ Built-in documentation covering keyboard shortcuts, settings, and getting starte
 3. **Launch** from Applications or the menu bar
 4. **Set shortcuts** in Settings → Shortcuts
 5. **Start switching** — press your hotkey and pick your AI
+6. **Exception Handling** — Unable to open after installation, prompt to delete.
+Solution - Open Terminal (Launchpad → Other → Terminal), enter:
+```bash
+xattr -cr /Applications/OmniAi.app
+```
 
 ## Privacy
 
