@@ -34,6 +34,11 @@ Built-in support for both international and domestic AI services:
 
 Switch regions anytime — your last session in each region is remembered.
 
+### Network Acceleration‌
+
+Built-in support for domestic users to access the Global AI service:
+Uploading a network acceleration configuration file enables automatic acceleration.
+
 ### WebView Stays Alive
 
 Each service runs in a persistent WebView that never gets destroyed. When you switch back, you're exactly where you left off — no reload, no refresh.
