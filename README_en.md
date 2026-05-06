@@ -44,6 +44,7 @@ Uploading a network acceleration configuration file enables automatic accelerati
 - The main application is extremely lightweight, retaining only the webview container, navigation bar, and basic settings, with no optional features built-in
 - Users download plugins on demand and decide which functions to load, with each plugin operating independently without interference
 - Plugins are uniformly released on GitHub; new versions are uploaded with each iteration, and clients automatically detect updates
+- Download Plugin：https://github.com/unhurriedly/OmniAi-Desktop/tree/main/Plugins
 
 ### WebView Stays Alive
 
