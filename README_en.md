@@ -39,6 +39,12 @@ Switch regions anytime — your last session in each region is remembered.
 Built-in support for domestic users to access the Global AI service:
 Uploading a network acceleration configuration file enables automatic acceleration.
 
+### Plugins
+
+- The main application is extremely lightweight, retaining only the webview container, navigation bar, and basic settings, with no optional features built-in
+- Users download plugins on demand and decide which functions to load, with each plugin operating independently without interference
+- Plugins are uniformly released on GitHub; new versions are uploaded with each iteration, and clients automatically detect updates
+
 ### WebView Stays Alive
 
 Each service runs in a persistent WebView that never gets destroyed. When you switch back, you're exactly where you left off — no reload, no refresh.
