@@ -10,6 +10,8 @@
 
 [![下载地址](https://img.shields.io/badge/Download-GitHub%20Releases-blue?style=flat-square)](https://github.com/unhurriedly/OminiAi/releases)
 
+<img width="1100" height="720" alt="钉钉录屏_2026-05-14 111046" src="https://github.com/user-attachments/assets/aa9a10e0-4cd3-44c6-86c2-2c7c2f8928bf" />
+
 ## 痛点
 
 AI 工具分散在不同的应用和网站中。在它们之间切换会打断你的工作节奏——管理标签页、重新认证、丢失上下文。认知负担是真实存在的。
