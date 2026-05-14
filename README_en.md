@@ -11,6 +11,8 @@ English | [简体中文](./README.md)
 
 [![Download](https://img.shields.io/badge/Download-GitHub%20Releases-blue?style=flat-square)](https://github.com/unhurriedly/OminiAi/releases)
 
+<img width="1100" height="720" alt="钉钉录屏_2026-05-14 111046" src="https://github.com/user-attachments/assets/aa9a10e0-4cd3-44c6-86c2-2c7c2f8928bf" />
+
 ## The Problem
 
 AI tools are scattered across different apps and websites. Switching between them kills your flow — managing tabs, re-authenticating, losing context. The cognitive overhead is real.
