@@ -31,15 +31,10 @@ Jump between any AI platform with a single click or keyboard shortcut. ChatGPT, 
 
 Built-in support for both international and domestic AI services:
 
-- **Global**：Claude, ChatGPT, Gemini, Manus
-- **Domestic**：DeepSeek, GLM, MiniMax, Doubao, Kimi, Baidu
+- **Global**：Claude, ChatGPT, Gemini, Manus、Perplexity
+- **Domestic**：DeepSeek, GLM, MiniMax, Doubao, Kimi, Baidu、Qwen、Jimeng、Coze
 
 Switch regions anytime — your last session in each region is remembered.
-
-### Network Acceleration‌
-
-Built-in support for domestic users to access the Global AI service:
-Uploading a network acceleration configuration file enables automatic acceleration.
 
 ### Plugins
 
