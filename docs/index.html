@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f4f0">
+  <meta name="description" content="OmniAI 多模型 AI 工作台，一个入口调用全球领先的 AI 模型。">
+  <title>OmniAI - All AI, one place.</title>
+  <link rel="icon" href="./assets/omniai.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="OmniAI 首页">
+      <img src="./assets/omniai.png" alt="">
+      <span>OmniAI</span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="#models">模型</a>
+      <a href="#parallel">并行提问</a>
+      <a href="#workflow">工作流</a>
+    </nav>
+    <a class="header-cta" href="https://github.com/unhurriedly/OmniAi-Desktop/releases/download/v0.6.3/OmniAi-0.6.3-arm64.dmg" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↓</span> 下载 macOS</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> 多模型 AI 工作台</p>
+        <h1 id="hero-title">OmniAI</h1>
+        <p class="hero-lede">让全世界的模型<br>为你所用。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/unhurriedly/OmniAi-Desktop/releases/download/v0.6.3/OmniAi-0.6.3-arm64.dmg" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↓</span> 下载 macOS</a>
+          <a class="text-link" href="#models">看看它如何工作 <span aria-hidden="true">↘</span></a>
+        </div>
+        <p class="availability">支持 macOS 13 及更高版本</p>
+      </div>
+
+      <div class="hero-stage" aria-label="OmniAI 产品交互演示">
+        <div class="stage-dots" aria-hidden="true"></div>
+        <button class="dynamic-island" type="button" aria-label="切换灵动岛状态">
+          <span class="island-mark"><i></i></span>
+          <span class="island-copy">
+            <b id="islandTitle">DeepSeek 正在撰写</b>
+            <small id="islandDetail">正在梳理品牌语气与核心卖点</small>
+          </span>
+          <span class="island-wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        </button>
+
+        <div class="collab-window">
+          <div class="window-bar">
+            <div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="service-rail" aria-label="OmniAI 模型服务">
+              <span class="window-service"><i>✳</i>Claude</span>
+              <span class="window-service" data-model-service="image"><i>◎</i>ChatGPT</span>
+              <span class="window-service"><i>✦</i>Gemini</span>
+              <span class="window-service" data-model-service="video"><i>◉</i>Google Flow</span>
+              <span class="window-service"><i>✣</i>Manus</span>
+              <span class="window-service"><i>⟐</i>Perplexity</span>
+              <span class="window-service active" data-model-service="copy"><i>深</i>DeepSeek</span>
+              <span class="window-service"><i>Z</i>GLM</span>
+              <span class="window-service"><i>◎</i>豆包</span>
+              <span class="window-service"><i>≋</i>MiniMax</span>
+              <span class="window-service"><i>◒</i>Kimi</span>
+              <span class="window-service"><i>◇</i>文心</span>
+              <span class="window-service"><i>千</i>Qwen</span>
+              <span class="window-service"><i>✦</i>即梦</span>
+              <span class="window-service"><i>扣</i>扣子</span>
+            </div>
+            <div class="window-actions" aria-hidden="true"><span>▦</span><span>?</span></div>
+          </div>
+          <div class="window-body">
+            <aside class="app-sidebar" aria-label="OmniAI 工具栏">
+              <b class="sidebar-brand">◎</b>
+              <span>✎</span><span>⌕</span><span>⌖</span><span>◯</span>
+              <small>CC</small>
+            </aside>
+            <div class="app-main">
+              <div class="app-toolbar">
+                <b><strong id="activeModelName">DeepSeek</strong> <span>⌄</span></b>
+                <div><span id="activeModelCapability">深度推理</span><i>◌</i></div>
+              </div>
+              <div class="conversation-canvas">
+                <div class="conversation-flow">
+                  <div class="question-row">
+                    <div class="question-meta"><span>你</span><small>刚刚</small></div>
+                    <p>为一款可持续随行杯生成发布文案、主视觉和 15 秒视频。</p>
+                  </div>
+                  <div class="generation-stage" aria-live="polite">
+                    <div class="task-progress" id="heroThinking">
+                      <span class="task-status-mark" aria-hidden="true"><i></i></span>
+                      <div class="task-progress-copy">
+                        <b id="thinkingTitle">正在处理请求</b>
+                        <small id="thinkingDetail">正在理解你的创作意图</small>
+                        <div class="task-steps" aria-hidden="true">
+                          <span class="is-done"><i>✓</i>分析需求</span>
+                          <span><i></i><b id="thinkingStep">生成内容</b></span>
+                        </div>
+                      </div>
+                      <time id="thinkingElapsed">00:01</time>
+                    </div>
+                    <section class="generation-panel" data-generation-panel="copy" aria-label="文案生成结果">
+                      <article class="assistant-turn text-result">
+                        <header><span class="assistant-mark">深</span><b>DeepSeek</b><small>回复</small></header>
+                        <div class="response-body"><p id="heroStream"></p><i class="cursor" aria-hidden="true"></i></div>
+                        <footer><span>已生成发布文案</span><span>48 字</span></footer>
+                      </article>
+                    </section>
+                    <section class="generation-panel" data-generation-panel="image" aria-label="图片生成结果" hidden>
+                      <article class="assistant-turn artifact-turn">
+                        <header><span class="assistant-mark">◎</span><b>ChatGPT</b><small>调用图像生成</small></header>
+                        <div class="artifact-card">
+                          <div class="artifact-head"><span class="artifact-icon">▧</span><div><b>创建主视觉</b><small>根据品牌语气与画面描述生成</small></div><em>完成</em></div>
+                          <figure class="generated-media image-result">
+                            <img src="./assets/addglow_backgrounds.webp" alt="AI 生成的 AddGlow 礼服品牌主视觉示例">
+                            <figcaption><b>AddGlow 主视觉</b><span>1600 × 900 · WEBP</span></figcaption>
+                          </figure>
+                        </div>
+                      </article>
+                    </section>
+                    <section class="generation-panel" data-generation-panel="video" aria-label="视频生成结果" hidden>
+                      <article class="assistant-turn artifact-turn">
+                        <header><span class="assistant-mark">✦</span><b>Google Flow</b><small>调用视频生成</small></header>
+                        <div class="artifact-card">
+                          <div class="artifact-head"><span class="artifact-icon">▶</span><div><b>渲染 15 秒品牌短片</b><small>组合主视觉、运镜与转场</small></div><em>完成</em></div>
+                          <figure class="generated-media video-result">
+                            <img src="./assets/flow.webp" alt="Google Flow 生成的视频预览画面">
+                            <span class="preview-play" aria-hidden="true">▶</span>
+                            <span class="hero-video-timeline" aria-hidden="true"><i></i></span>
+                            <figcaption><b>城市生活品牌短片</b><span>00:15 · 1080p</span></figcaption>
+                          </figure>
+                        </div>
+                      </article>
+                    </section>
+                  </div>
+                </div>
+                <div class="compose-row">
+                  <b aria-hidden="true">＋</b>
+                  <span>描述你想生成的场景...</span>
+                  <i aria-hidden="true">⌁</i>
+                  <button type="button" aria-label="发送消息">↑</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="position-band" id="positioning" aria-label="产品定位">
+      <div class="position-line"><span>01</span><p>一个入口</p><strong>15 个世界级 AI 服务</strong></div>
+      <div class="position-line"><span>02</span><p>一个问题</p><strong>多模型同时回答</strong></div>
+      <div class="position-line"><span>03</span><p>一个工作流</p><strong>文字、图片、视频连续协作</strong></div>
+    </section>
+
+    <section class="models-section" id="models" aria-labelledby="models-title">
+      <div class="section-heading light-heading">
+        <h2 id="models-title">全世界最好的模型，<br>都在你的圆桌上。</h2>
+        <p>国际与国内主流 AI 服务随时切换。登录一次，就能在同一个工作台持续使用。</p>
+      </div>
+      <div class="orbit-shell">
+        <div class="shape shape-one" aria-hidden="true"></div>
+        <div class="shape shape-two" aria-hidden="true"></div>
+        <div class="orbit-window" tabindex="0" aria-label="模型卡片轮播，使用左右方向键切换">
+          <div class="orbit-track" id="orbitTrack"></div>
+        </div>
+        <div class="orbit-controls">
+          <button type="button" data-orbit="-1" aria-label="上一个模型">←</button>
+          <p aria-live="polite"><b id="orbitName">ChatGPT</b><span id="orbitCount">02 / 15</span></p>
+          <button type="button" data-orbit="1" aria-label="下一个模型">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="parallel-section" id="parallel" aria-labelledby="parallel-title">
+      <div class="section-heading dark-heading">
+        <h2 id="parallel-title">一次发问，<br>提给多个模型。</h2>
+      </div>
+      <div class="parallel-workbench">
+        <div class="prompt-line">
+          <span>你的问题</span>
+          <p>为“周末城市漫游”策划一个 30 秒短视频开场。</p>
+          <div class="prompt-actions">
+            <div class="model-config">
+              <button class="model-config-trigger" id="modelConfigTrigger" type="button" aria-expanded="false" aria-controls="modelConfigMenu" aria-label="配置模型，已选择 3 个模型">
+                <span class="config-status" aria-hidden="true"></span>
+                <span id="modelConfigName">DeepSeek</span>
+                <small id="modelConfigExtra">×3</small>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="model-config-menu" id="modelConfigMenu" role="menu" aria-label="配置参与回答的模型" hidden>
+                <button class="model-config-option is-selected" type="button" data-model-option="deepseek" role="menuitemcheckbox" aria-checked="true"><span class="option-check">✓</span><span class="option-symbol deepseek-symbol">D</span><span><b>DeepSeek</b><small>结构与策略</small></span></button>
+                <button class="model-config-option is-selected" type="button" data-model-option="kimi" role="menuitemcheckbox" aria-checked="true"><span class="option-check">✓</span><span class="option-symbol kimi-symbol">K</span><span><b>Kimi</b><small>叙事与文案</small></span></button>
+                <button class="model-config-option is-selected" type="button" data-model-option="qwen" role="menuitemcheckbox" aria-checked="true"><span class="option-check">✓</span><span class="option-symbol qwen-symbol">Q</span><span><b>Qwen</b><small>镜头与执行</small></span></button>
+                <button class="model-config-option is-limit-disabled" type="button" data-model-option="claude" role="menuitemcheckbox" aria-checked="false" aria-disabled="true" disabled title="最多选择 3 个模型"><span class="option-check">✓</span><span class="option-symbol claude-symbol">✳</span><span><b>Claude</b><small>创意与表达</small></span></button>
+                <button class="model-config-option is-limit-disabled" type="button" data-model-option="chatgpt" role="menuitemcheckbox" aria-checked="false" aria-disabled="true" disabled title="最多选择 3 个模型"><span class="option-check">✓</span><span class="option-symbol chatgpt-symbol">◎</span><span><b>ChatGPT</b><small>综合与创意</small></span></button>
+              </div>
+            </div>
+            <span class="send-target">发送给 <b id="selectedModelCount">3</b> 个模型</span>
+            <button class="run-button" id="rerunAnswers" type="button"><span aria-hidden="true">↻</span><b>重新演示</b></button>
+          </div>
+        </div>
+        <div class="answer-grid">
+          <article class="answer-column" data-answer="deepseek">
+            <header><span class="model-symbol deepseek-symbol">D</span><div><b>DeepSeek</b><small>结构与策略</small></div><i class="status-dot"></i></header>
+            <div class="answer-content" id="answerDeepseek"></div>
+          </article>
+          <article class="answer-column" data-answer="kimi">
+            <header><span class="model-symbol kimi-symbol">K</span><div><b>Kimi</b><small>叙事与文案</small></div><i class="status-dot"></i></header>
+            <div class="answer-content" id="answerKimi"></div>
+          </article>
+          <article class="answer-column" data-answer="qwen">
+            <header><span class="model-symbol qwen-symbol">Q</span><div><b>Qwen</b><small>镜头与执行</small></div><i class="status-dot"></i></header>
+            <div class="answer-content" id="answerQwen"></div>
+          </article>
+          <article class="answer-column is-disabled" data-answer="claude" aria-hidden="true">
+            <header><span class="model-symbol claude-symbol">✳</span><div><b>Claude</b><small>创意与表达</small></div><i class="status-dot"></i></header>
+            <div class="answer-content" id="answerClaude"></div>
+          </article>
+          <article class="answer-column is-disabled" data-answer="chatgpt" aria-hidden="true">
+            <header><span class="model-symbol chatgpt-symbol">◎</span><div><b>ChatGPT</b><small>综合与创意</small></div><i class="status-dot"></i></header>
+            <div class="answer-content" id="answerChatgpt"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="switch-section" id="switch" aria-labelledby="switch-title">
+      <div class="section-heading compact-heading">
+        <h2 id="switch-title">不同模型间，<br>快速切换。</h2>
+        <p>对话上下文留在原处，只换一种思考方式继续。</p>
+      </div>
+      <div class="switch-demo">
+        <div class="model-rail" role="tablist" aria-label="选择模型">
+          <button class="active" type="button" data-switch="deepseek" role="tab" aria-selected="true"><span class="deepseek-symbol">D</span><b>DeepSeek</b><small>深度推理</small></button>
+          <button type="button" data-switch="kimi" role="tab" aria-selected="false"><span class="kimi-symbol">K</span><b>Kimi</b><small>长文本</small></button>
+          <button type="button" data-switch="qwen" role="tab" aria-selected="false"><span class="qwen-symbol">Q</span><b>Qwen</b><small>通用对话</small></button>
+          <button type="button" data-switch="chatgpt" role="tab" aria-selected="false"><span class="chatgpt-symbol">◎</span><b>ChatGPT</b><small>综合创作</small></button>
+          <button type="button" data-switch="gemini" role="tab" aria-selected="false"><img src="./assets/gemini.svg" alt=""><b>Gemini</b><small>多模态</small></button>
+          <button type="button" data-switch="claude" role="tab" aria-selected="false"><span class="claude-symbol">✳</span><b>Claude</b><small>写作分析</small></button>
+        </div>
+        <div class="switch-visual" aria-live="polite">
+          <img id="switchScreenshot" src="./assets/switch-deepseek.png" alt="OmniAI 主程序中的 DeepSeek 界面">
+        </div>
+      </div>
+    </section>
+
+    <section class="shortcut-section" aria-labelledby="shortcut-title">
+      <div class="shortcut-copy">
+        <h2 id="shortcut-title">呼之即来，<br>挥之即去。</h2>
+        <p>灵感出现时，不必离开正在做的事。</p>
+        <button class="shortcut-button" id="shortcutToggle" type="button"><span>⌥</span><span>Space</span><b>试一下</b></button>
+      </div>
+      <div class="shortcut-stage">
+        <div class="work-context" aria-hidden="true">
+          <div class="context-sidebar"></div>
+          <div class="context-lines"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="quick-window" id="quickWindow">
+          <div class="quick-head"><img src="./assets/omniai.png" alt=""><span>OmniAI</span><small>⌥ Space 隐藏</small></div>
+          <p>问任何模型，或者同时问它们。</p>
+          <div class="quick-models"><span>✳</span><span>◎</span><span>✦</span><span>深</span><b>+11</b></div>
+          <div class="quick-input"><span>输入你的问题...</span><button type="button" aria-label="发送">↑</button></div>
+        </div>
+        <p class="shortcut-status" id="shortcutStatus">OmniAI 已显示</p>
+      </div>
+    </section>
+
+    <section class="workflow-section" id="workflow" aria-labelledby="workflow-title">
+      <div class="section-heading workflow-heading">
+        <h2 id="workflow-title">多模型工作流，<br>一气呵成。</h2>
+        <p>每个模型做它最擅长的事，输出自动成为下一步的输入。</p>
+      </div>
+      <div class="workflow-track">
+        <article class="workflow-node script-node" data-step="1">
+          <header><span>01</span><b>DeepSeek</b><i>文案脚本</i></header>
+          <div class="script-lines">
+            <p><b>镜头 01</b> 清晨，城市还没完全醒来。</p>
+            <p><b>镜头 02</b> 一只随行杯穿过地铁、街角和天台。</p>
+            <p><b>旁白</b> “带走温度，不留下负担。”</p>
+          </div>
+          <footer><span class="done-mark">✓</span> 脚本已完成</footer>
+        </article>
+        <div class="flow-arrow" aria-hidden="true"><span>传递脚本</span>→</div>
+        <article class="workflow-node image-node" data-step="2">
+          <header><span>02</span><b>GPT Image 2</b><i>生成图片</i></header>
+          <img src="./assets/image-output.webp" alt="AI 生成的创意视觉拼贴">
+          <footer><span class="done-mark">✓</span> 主视觉已生成</footer>
+        </article>
+        <div class="flow-arrow" aria-hidden="true"><span>传递视觉</span>→</div>
+        <article class="workflow-node video-node" data-step="3">
+          <header><span>03</span><b>Google Flow</b><i>生成视频</i></header>
+          <div class="video-frame">
+            <img src="./assets/flow.webp" alt="Google Flow 视频素材画面">
+            <button type="button" aria-label="播放视频预览">▶</button>
+            <div class="video-timeline"><i></i></div>
+          </div>
+          <footer><span class="pulse-mark"></span> 正在生成 00:18</footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="download-section" id="download" aria-labelledby="download-title">
+      <img src="./assets/omniai.png" alt="OmniAI 应用图标">
+      <p>All AI, one place.</p>
+      <h2 id="download-title">把所有 AI，<br>装进一个工作台。</h2>
+      <a class="button download-button" href="https://github.com/unhurriedly/OmniAi-Desktop/releases/download/v0.6.3/OmniAi-0.6.3-arm64.dmg" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↓</span> 下载 OmniAI for macOS</a>
+      <small>macOS 13+ · Apple Silicon 与 Intel</small>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#top"><img src="./assets/omniai.png" alt=""><span>OmniAI</span></a>
+    <p>一个入口，访问所有 AI 服务。</p>
+    <span>© 2026 OmniAI</span>
+  </footer>
+  <script src="./app.js?v=product-switch-1"></script>
+</body>
+</html>

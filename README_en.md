@@ -9,7 +9,9 @@ An AI-native application that brings every major AI assistant into one window. S
 
 English | [简体中文](./README.md)
 
-[![Download](https://img.shields.io/badge/Download-GitHub%20Releases-blue?style=flat-square)](https://github.com/unhurriedly/OminiAi/releases)
+[Official website](https://unhurriedly.github.io/OmniAi-Desktop/) | [Download the latest release](https://github.com/unhurriedly/OmniAi-Desktop/releases)
+
+[![Download](https://img.shields.io/badge/Download-GitHub%20Releases-blue?style=flat-square)](https://github.com/unhurriedly/OmniAi-Desktop/releases)
 
 <img width="1100" height="720" alt="钉钉录屏_2026-05-14 111046" src="https://github.com/user-attachments/assets/aa9a10e0-4cd3-44c6-86c2-2c7c2f8928bf" />
 
@@ -73,7 +75,7 @@ Built-in documentation covering keyboard shortcuts, settings, and getting starte
 
 ## Getting Started
 
-1. **Download** the latest release from the [Releases page](https://github.com/unhurriedly/OminiAi/releases)
+1. **Download** the latest release from the [Releases page](https://github.com/unhurriedly/OmniAi-Desktop/releases)
 2. **Install** by double-clicking the OmniAi application
 3. **Launch** from Applications or the menu bar
 4. **Set shortcuts** in Settings → Shortcuts

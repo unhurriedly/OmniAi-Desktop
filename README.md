@@ -8,7 +8,9 @@
 
 [English](./README_en.md) | 简体中文
 
-[![下载地址](https://img.shields.io/badge/Download-GitHub%20Releases-blue?style=flat-square)](https://github.com/unhurriedly/OminiAi/releases)
+[官方网站](https://unhurriedly.github.io/OmniAi-Desktop/) | [下载最新版本](https://github.com/unhurriedly/OmniAi-Desktop/releases)
+
+[![下载地址](https://img.shields.io/badge/Download-GitHub%20Releases-blue?style=flat-square)](https://github.com/unhurriedly/OmniAi-Desktop/releases)
 
 <img width="1100" height="720" alt="钉钉录屏_2026-05-14 111046" src="https://github.com/user-attachments/assets/aa9a10e0-4cd3-44c6-86c2-2c7c2f8928bf" />
 
@@ -72,7 +74,7 @@ OmniAi 将所有 AI 助手聚合在一个 AI 原生应用中。你的会话保�
 
 ## 快速开始
 
-1. **下载** 从 [Releases 页面](https://github.com/unhurriedly/OminiAi/releases) 下载最新版本
+1. **下载** 从 [Releases 页面](https://github.com/unhurriedly/OmniAi-Desktop/releases) 下载最新版本
 2. **安装** 将 OmniAi 应用程序双击安装
 3. **启动** 从应用程序或菜单栏启动
 4. **设置快捷键** 在设置 → 快捷键中配置
