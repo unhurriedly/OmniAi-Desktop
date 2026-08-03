@@ -140,4 +140,5 @@ body,.hero,.position-band,.models-section,.orbit-shell,.parallel-section,.switch
 @media(max-width:760px){.generation-switch button small{padding-left:3px;font-size:3px}}
 @media(max-width:760px){.orbit-track{top:2154px;transform:translateX(-50%) rotate(calc(var(--position) * -3.7deg))}.orbit-item{top:-2130px;transform-origin:50% 4730px;transform:rotate(calc(var(--slot) * 3.7deg))}}
 @media(max-width:760px){.prompt-actions{width:100%;justify-content:flex-start;flex-wrap:wrap}.prompt-actions .run-button{margin:0 0 0 auto}.model-config-menu{right:auto;left:0;width:min(218px,calc(100vw - 72px))}.send-target{padding:0 7px}.answer-content{min-height:130px}}
+@media(max-width:760px) and (max-height:720px){.hero{min-height:710px}.hero-stage{bottom:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
