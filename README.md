@@ -12,7 +12,9 @@
 
 [![下载地址](https://img.shields.io/badge/Download-GitHub%20Releases-blue?style=flat-square)](https://github.com/unhurriedly/OmniAi-Desktop/releases)
 
-<img width="1100" height="720" alt="钉钉录屏_2026-05-14 111046" src="https://github.com/user-attachments/assets/aa9a10e0-4cd3-44c6-86c2-2c7c2f8928bf" />
+<img width="3840" height="1672" alt="image" src="https://github.com/user-attachments/assets/9d9b32d8-9c95-4e11-8286-30ddd1e19574" />
+<img width="3806" height="1516" alt="image" src="https://github.com/user-attachments/assets/c150b937-20b3-438f-9d87-2cff5b611948" />
+<img width="3840" height="1502" alt="image" src="https://github.com/user-attachments/assets/9324ce07-f5fb-44a1-8e8f-6d6890b4bfce" />
 
 ## 痛点
 
