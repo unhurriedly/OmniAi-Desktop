@@ -1,11 +1,10 @@
+<img width="70" height="70" alt="OmniAI logo" src="https://github.com/user-attachments/assets/b974e1f4-beae-4ab5-bcba-7853716822e5" />
 
-<img width="70" height="70" alt="正式logo" src="https://github.com/user-attachments/assets/b974e1f4-beae-4ab5-bcba-7853716822e5" />
-
-# OmniAi
+# OmniAI
 
 **All AI, one place.**
 
-An AI-native application that brings every major AI assistant into one window. Switch instantly between ChatGPT, Claude, Gemini, Manus, DeepSeek, GLM, Doubao, MiniMax, Kimi and more — no browser tabs, no re-logins, no context switching.
+An AI-native desktop app that brings leading AI assistants together in one window. Switch instantly between ChatGPT, Claude, Gemini, Manus, DeepSeek, GLM, Doubao, MiniMax, Kimi, and more, without juggling browser tabs, signing in repeatedly, or losing context.
 
 English | [简体中文](./README.md)
 
@@ -13,96 +12,97 @@ English | [简体中文](./README.md)
 
 [![Download](https://img.shields.io/badge/Download-GitHub%20Releases-blue?style=flat-square)](https://github.com/unhurriedly/OmniAi-Desktop/releases)
 
-<img width="1100" height="720" alt="钉钉录屏_2026-05-14 111046" src="https://github.com/user-attachments/assets/aa9a10e0-4cd3-44c6-86c2-2c7c2f8928bf" />
+<img width="3840" height="1672" alt="OmniAI workspace" src="https://github.com/user-attachments/assets/9d9b32d8-9c95-4e11-8286-30ddd1e19574" />
+<img width="3806" height="1516" alt="OmniAI model switching" src="https://github.com/user-attachments/assets/c150b937-20b3-438f-9d87-2cff5b611948" />
+<img width="3840" height="1502" alt="OmniAI workflow" src="https://github.com/user-attachments/assets/9324ce07-f5fb-44a1-8e8f-6d6890b4bfce" />
 
 ## The Problem
 
-AI tools are scattered across different apps and websites. Switching between them kills your flow — managing tabs, re-authenticating, losing context. The cognitive overhead is real.
+AI tools are scattered across different apps and websites. Switching between them interrupts your flow: managing tabs, signing in again, and losing context all create unnecessary cognitive overhead.
 
 ## The Solution
 
-OmniAi aggregates all your AI assistants in one AI-native app. Your sessions stay alive, switching is instant, and everything stays organized.
+OmniAI brings all your AI assistants into one native workspace. Sessions stay active, switching is instant, and every service remains organized in one place.
 
 ## Features
 
 ### Instant Switching
 
-Jump between any AI platform with a single click or keyboard shortcut. ChatGPT, Claude, Gemini, DeepSeek, GLM, Doubao, MiniMax, Kimi, Wenxin — all accessible instantly.
+Jump between AI platforms with a click or keyboard shortcut. ChatGPT, Claude, Gemini, DeepSeek, GLM, Doubao, MiniMax, Kimi, and ERNIE Bot are all instantly accessible.
 
-### Global & Domestic Platforms
+### Global and China Services
 
-Built-in support for both international and domestic AI services:
+OmniAI includes built-in support for both global and China-based AI services:
 
-- **Global**：Claude, ChatGPT, Gemini, Manus、Perplexity
-- **Domestic**：DeepSeek, GLM, MiniMax, Doubao, Kimi, Baidu、Qwen、Jimeng、Coze
+- **Global:** Claude, ChatGPT, Gemini, Manus, Perplexity
+- **China:** DeepSeek, GLM, MiniMax, Doubao, Kimi, ERNIE Bot, Qwen, Jimeng, Coze
 
-Switch regions anytime — your last session in each region is remembered.
+Switch regions at any time. OmniAI remembers the last service used in each region.
 
 ### Plugins
 
-- The main application is extremely lightweight, retaining only the webview container, navigation bar, and basic settings, with no optional features built-in
-- Users download plugins on demand and decide which functions to load, with each plugin operating independently without interference
-- Plugins are uniformly released on GitHub; new versions are uploaded with each iteration, and clients automatically detect updates
-- Download Plugin：https://github.com/unhurriedly/OmniAi-Desktop/tree/main/Plugins
+- The core app stays lightweight, containing only the WebView container, navigation, and essential settings.
+- Optional features are available as independent plugins that users can install on demand.
+- Plugins are released through GitHub, and the app automatically detects new versions.
+- [Browse and download plugins](https://github.com/unhurriedly/OmniAi-Desktop/tree/main/Plugins)
 
-### WebView Stays Alive
+### Persistent WebViews
 
-Each service runs in a persistent WebView that never gets destroyed. When you switch back, you're exactly where you left off — no reload, no refresh.
+Each service runs in a persistent WebView that remains active when you switch away. Return to a service and continue exactly where you left off, without reloading or refreshing.
 
-### Session Persistence
+### Persistent Sessions
 
-Authentication cookies are stored securely and persist across app restarts. Log in once, stay logged in. No repeated sign-ins.
+Authentication cookies are stored locally and remain available after restarting the app. Sign in once and stay signed in.
 
 ### Global Shortcuts
 
 Keep your hands on the keyboard:
 
-- `Option + Space` — Global hotkey to summon or hide OmniAi
-- `Cmd + 1/2/3...` — Quick switch to any AI service by position
+- `Option + Space` - Show or hide OmniAI from anywhere
+- `Cmd + 1/2/3...` - Switch to an AI service by its position
 
-(Global shortcuts are fully customizable in Settings)
+The global shortcut can be fully customized in Settings.
 
 ### Help Center
 
-Built-in documentation covering keyboard shortcuts, settings, and getting started guide. Access it anytime from the navigation bar.
+Built-in documentation covers keyboard shortcuts, settings, and getting started. It is always available from the navigation bar.
 
 ## Who Is It For?
 
-- **Developers** — Compare AI responses, test prompts across models
-- **Product Managers** — Evaluate AI capabilities across providers
-- **Creators** — Leverage different AI tools for different tasks
-- **Power Users** — Anyone who uses multiple AI assistants daily
+- **Developers** - Compare model responses and test prompts across services
+- **Product managers** - Evaluate capabilities from different AI providers
+- **Creators** - Use the right AI tool for each part of the creative process
+- **Power users** - Work with multiple AI assistants every day
 
 ## Getting Started
 
-1. **Download** the latest release from the [Releases page](https://github.com/unhurriedly/OmniAi-Desktop/releases)
-2. **Install** by double-clicking the OmniAi application
-3. **Launch** from Applications or the menu bar
-4. **Set shortcuts** in Settings → Shortcuts
-5. **Start switching** — press your hotkey and pick your AI
-6. **Exception Handling** — Unable to open after installation, prompt to delete.
-Solution - Open Terminal (Launchpad → Other → Terminal), enter:
+1. **Download** the latest version from [GitHub Releases](https://github.com/unhurriedly/OmniAi-Desktop/releases).
+2. **Install** OmniAI on your Mac.
+3. **Launch** it from Applications or the menu bar.
+4. **Configure shortcuts** in Settings > Shortcuts.
+5. **Start using OmniAI** by pressing your global shortcut and choosing a service.
+6. **If macOS says the app cannot be opened**, open Terminal and run:
+
 ```bash
 xattr -cr /Applications/OmniAi.app
 ```
 
 ## Privacy
 
-OmniAi operates entirely on your local machine:
+OmniAI runs entirely on your local machine:
 
-- All session data stored locally
-- No external servers, no proxy
-- No analytics, no telemetry, no tracking
-- Your conversations never leave your device
+- Session data is stored locally
+- No external proxy server
+- No analytics, telemetry, or tracking
+- Your conversations stay between you and the AI services you use
 
 ## Roadmap
 
 - [ ] Context preservation
-- [ ] Information subscription module
+- [ ] Information subscriptions
 - [ ] Skills integration
 - [ ] Web services
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit issues and pull requests.
-
+Contributions are welcome. Feel free to open an issue or submit a pull request.
