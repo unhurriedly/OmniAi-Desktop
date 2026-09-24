@@ -141,4 +141,6 @@ body,.hero,.position-band,.models-section,.orbit-shell,.parallel-section,.switch
 @media(max-width:760px){.orbit-track{top:2154px;transform:translateX(-50%) rotate(calc(var(--position) * -3.7deg))}.orbit-item{top:-2130px;transform-origin:50% 4730px;transform:rotate(calc(var(--slot) * 3.7deg))}}
 @media(max-width:760px){.prompt-actions{width:100%;justify-content:flex-start;flex-wrap:wrap}.prompt-actions .run-button{margin:0 0 0 auto}.model-config-menu{right:auto;left:0;width:min(218px,calc(100vw - 72px))}.send-target{padding:0 7px}.answer-content{min-height:130px}}
 @media(max-width:760px){.hero{height:680px;min-height:680px}.hero-stage{top:355px;bottom:auto}.collab-window{top:74px;height:calc(100% - 74px)}}
+/* Keep the mobile product preview above the hero copy without overlapping it. */
+@media(max-width:760px){.hero{height:auto;min-height:780px;padding:60px 20px 40px;display:flex;flex-direction:column;align-items:stretch}.hero-stage{position:relative;order:1;top:auto;right:-20px;bottom:auto;width:calc(100% + 20px);height:313px;min-height:313px;margin:0 0 28px;flex:0 0 313px}.hero-copy{order:2}.collab-window{top:74px;height:calc(100% - 74px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
