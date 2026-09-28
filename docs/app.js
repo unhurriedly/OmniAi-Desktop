@@ -1,5 +1,27 @@
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+const latestReleaseApi = 'https://api.github.com/repos/unhurriedly/OmniAi-Desktop/releases/latest';
+const fallbackDownloadUrl = 'https://github.com/unhurriedly/OmniAi-Desktop/releases/download/v0.6.4/OmniAi-0.6.4-arm64.dmg';
+async function updateDownloadLinks() {
+  const links = [...document.querySelectorAll('a[href*="releases/download"]')];
+  if (!links.length) return;
+  let downloadUrl = fallbackDownloadUrl;
+  try {
+    const response = await fetch(latestReleaseApi, {
+      headers: {Accept: 'application/vnd.github+json'},
+      cache: 'no-store'
+    });
+    if (!response.ok) throw new Error(`GitHub Releases request failed: ${response.status}`);
+    const release = await response.json();
+    const asset = release.assets?.find(item => /-arm64\.dmg$/i.test(item.name));
+    if (asset?.browser_download_url) downloadUrl = asset.browser_download_url;
+  } catch (error) {
+    console.warn('Using the fallback OmniAi download URL.', error);
+  }
+  links.forEach(link => { link.href = downloadUrl; });
+}
+updateDownloadLinks();
+
 const generationModes = ['copy', 'image', 'video'];
 let activeGenerationMode = 'copy';
 const heroModels = {
@@ -278,12 +300,12 @@ rerunAnswers.addEventListener('click', runAnswers);
 updateAnswerModels();
 
 const switchScreens = {
-  deepseek:{src:'./assets/switch-deepseek.png',alt:'OmniAI 主程序中的 DeepSeek 界面'},
-  kimi:{src:'./assets/switch-kimi.png',alt:'OmniAI 主程序中的 Kimi 界面'},
-  qwen:{src:'./assets/switch-qwen.png',alt:'OmniAI 主程序中的 Qwen 界面'},
-  chatgpt:{src:'./assets/switch-chatgpt.png',alt:'OmniAI 主程序中的 ChatGPT 界面'},
-  gemini:{src:'./assets/switch-gemini.png',alt:'OmniAI 主程序中的 Gemini 界面'},
-  claude:{src:'./assets/switch-claude.png',alt:'OmniAI 主程序中的 Claude 界面'}
+  deepseek:{src:'./assets/switch-deepseek.png',alt:'OmniAi 主程序中的 DeepSeek 界面'},
+  kimi:{src:'./assets/switch-kimi.png',alt:'OmniAi 主程序中的 Kimi 界面'},
+  qwen:{src:'./assets/switch-qwen.png',alt:'OmniAi 主程序中的 Qwen 界面'},
+  chatgpt:{src:'./assets/switch-chatgpt.png',alt:'OmniAi 主程序中的 ChatGPT 界面'},
+  gemini:{src:'./assets/switch-gemini.png',alt:'OmniAi 主程序中的 Gemini 界面'},
+  claude:{src:'./assets/switch-claude.png',alt:'OmniAi 主程序中的 Claude 界面'}
 };
 Object.values(switchScreens).forEach(screen => { const image = new Image(); image.src = screen.src; });
 document.querySelectorAll('[data-switch]').forEach(button => button.addEventListener('click', () => {
@@ -302,7 +324,7 @@ let quickVisible = true;
 function toggleQuickWindow() {
   quickVisible = !quickVisible;
   document.querySelector('#quickWindow').classList.toggle('is-hidden', !quickVisible);
-  document.querySelector('#shortcutStatus').textContent = quickVisible ? 'OmniAI 已显示' : 'OmniAI 已隐藏，再按一次唤回';
+  document.querySelector('#shortcutStatus').textContent = quickVisible ? 'OmniAi 已显示' : 'OmniAi 已隐藏，再按一次唤回';
 }
 document.querySelector('#shortcutToggle').addEventListener('click', toggleQuickWindow);
 window.addEventListener('keydown', event => { if (event.altKey && event.code === 'Space') { event.preventDefault(); toggleQuickWindow(); } });
